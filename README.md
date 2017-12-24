@@ -1,6 +1,6 @@
 Art By Alice
 ====================
-This is the (WIP) website for [aliceforde.com](http://aliceforde.com). It's a static site that runs on wick.
+This is the (WIP) website for [aliceforde.me](http://aliceforde.me). It's a static site that runs on wick.
 
 License
 =======
