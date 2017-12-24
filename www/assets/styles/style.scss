@@ -1,0 +1,258 @@
+html {
+  font-family: 'Slabo 27px', serif;
+  color: white;
+  background: black;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 20px;
+}
+
+header {
+  margin: 0px;
+  height: 90vh;
+  background-image: url("../images/art/painting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+h1 {
+  font-family: 'Alice', serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: white;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  transition: all 0.4s;
+  &:hover {
+    background: lightgrey;
+    color: black;
+  }
+}
+
+nav {
+  top: 0px;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin-top: 0px;
+  }
+  li {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    ul {
+      width: 100%;
+      padding: 0px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      justify-content: center;
+    }
+  }
+}
+
+.introduction {
+  margin: 30vh auto;
+  text-align: center;
+  h1 {
+    font-size: 8vw;
+    margin: 0 auto;
+  }
+  .subheadline {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .introduction {
+    margin: 40px auto 10px auto;
+    text-align: center;
+    h1 {
+      font-size: 11vw;
+      margin: 0 auto;
+    }
+    .subheadline {
+      font-size: 18px;
+      width: 80%;
+      font-weight: normal;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+}
+
+section.full {
+  width: 100%;
+}
+
+.section-content {
+  padding: 30px;
+  padding-left: 5%;
+}
+
+.section-content h2 {
+  text-shadow: 2px 2px #000000;
+}
+
+.section-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+  max-width: 900px;
+
+  .section-text {
+    width: 80%;
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px #000000;
+      font-size: 22px;
+    }
+  }
+}
+
+section.black {
+  background-color: lightgray;
+  color: white;
+  a {
+    color: white;
+    &:hover {
+        color: #4A9DA7;
+      }
+  }
+}
+
+.art {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.art-item {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #F9F9F9;
+  box-shadow: -2px 2px 2px #919191;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 600px) {
+  .art-item {
+    display: none;
+  }
+}
+
+.art-item img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  background-color: #000000;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+.footer-column {
+    padding: 20px;
+    max-width: 50%;
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+  .footer-column {
+      padding: 0px;
+      max-width: 100%;
+  }
+}
+
+ul.links {
+  text-align: right;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #4A9DA7;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  ul.links {
+    text-align: left;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: #4A9DA7;
+      }
+    }
+  }
+}
+
+.external-logo {
+  width: 20px;
+  height: 20px;
+}
