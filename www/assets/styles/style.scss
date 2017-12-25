@@ -8,11 +8,13 @@ body {
   margin: 0 auto;
   padding: 0;
   font-size: 20px;
+  font-family: 'Noto Serif', serif;
 }
 
 header {
   margin: 0px;
   height: 90vh;
+  min-height: 500px;
   background-image: url("../images/art/painting.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -95,13 +97,18 @@ nav {
   margin: 30vh auto;
   text-align: center;
   h1 {
-    font-size: 8vw;
+    font-size: 10vw;
     margin: 0 auto;
+    font-family: 'Skranji', cursive;
+    text-shadow: 2px 2px black;
+
   }
   .subheadline {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: normal;
     text-align: center;
+    margin: 0px auto;
+    text-shadow: 1px 1px black;
   }
 }
 
@@ -159,8 +166,8 @@ section.orange {
 .art {
   display: flex;
   justify-content: flex-start;
-
   flex-wrap: wrap;
+  margin: 50px auto;
 }
 
 .art-item {
@@ -180,8 +187,8 @@ section.orange {
 }
 
 .art-item img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 200px;
 }
 
 .profile {
@@ -216,11 +223,23 @@ section.orange {
   margin: auto 20px;
 }
 
+
+
 footer {
   width: 100%;
   bottom: 0px;
   background-color: #000000;
 }
+
+footer section.light {
+  a {
+    color: #4A9DA7;
+    &:hover {
+      color: #973E16;
+    }
+  }
+}
+
 
 .columns {
   display: flex;
@@ -237,14 +256,21 @@ footer {
 .footer-column {
     padding: 20px;
     max-width: 50%;
+    color: #4A9DA7;
+
     ul {
       list-style: none;
     }
     li {
       margin-bottom: 20px;
     }
+    a {
+      color: #4A9DA7;
+      &:hover {
+        color: #973E16;
+      }
+    }
 }
-
 
 @media (max-width: 600px) {
   .footer-column {
@@ -257,15 +283,26 @@ ul.links {
   text-align: right;
   a {
     text-decoration: none;
+    color: #4A9DA7;
     &:hover {
-      color: #4A9DA7;
+      color: #973E16;
     }
   }
 }
 
+a.footer.button {
+  border-color: #4A9DA7;
+  &:hover {
+    background: #4A9DA7;
+    color: lightgrey;
+  }
+}
+
+
 @media (max-width: 600px) {
   ul.links {
     text-align: left;
+
     a {
       text-decoration: none;
       &:hover {
@@ -273,9 +310,4 @@ ul.links {
       }
     }
   }
-}
-
-.external-logo {
-  width: 20px;
-  height: 20px;
 }
