@@ -136,6 +136,14 @@ section .centered {
   padding: 50px 0px;
 }
 
+@media (max-width: 600px) {
+  section .centered {
+    max-width: 240px;
+    margin: 0px auto;
+    padding: 10px 0px;
+  }
+}
+
 section.light {
   background-color: lightgray;
   color: white;
@@ -175,12 +183,6 @@ section.orange {
   height: 200px;
 }
 
-@media (max-width: 600px) {
-  .art-item {
-    display: none;
-  }
-}
-
 .art-item img {
   width: auto;
   height: 200px;
@@ -191,8 +193,20 @@ section.orange {
   justify-content: space-around;
 }
 
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+  }
+}
+
 .profile .headshot {
  margin-top: 70px;
+}
+
+@media (max-width: 600px) {
+  .profile .headshot {
+   margin-top: 50px;
+  }
 }
 
 .headshot img {
@@ -203,9 +217,24 @@ section.orange {
   max-width: 400px;
 }
 
+@media (max-width: 600px) {
+  .headshot img {
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
 .profile .bio {
   width: 50vw;
   max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .profile .bio {
+    width: 80vw;
+    margin-left: -20px;
+    font-size: 16px;
+  }
 }
 
 .buttons {
@@ -214,10 +243,18 @@ section.orange {
   margin: 50px 0px;
 }
 
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons .button {
+    margin: 20px;
+  }
+}
+
 .buttons a {
   margin: auto 20px;
 }
-
 
 
 footer {
@@ -244,7 +281,7 @@ footer section.light {
 
 @media (max-width: 600px) {
   .columns {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
