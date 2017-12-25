@@ -1,6 +1,22 @@
 Art By Alice
 ====================
-This is the (WIP) website for [aliceforde.me](http://aliceforde.me). It's a static site that runs on wick.
+A portfolio website for [aliceforde.me](http://aliceforde.me). It's a static site that runs on wick, deployed on surge.
+
+
+Run
+====================
+```
+npm install
+npm run start
+```
+
+Deploy
+====================
+```
+wick compile www build
+surge build
+```
+
 
 License
 =======
