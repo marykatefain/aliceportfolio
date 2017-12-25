@@ -21,6 +21,7 @@
   },
   "homepage": "https://candlewaster.co",
   "dependencies": {
+    "lightbox2": "^2.10.0",
     "wick": "latest"
   }
 }
