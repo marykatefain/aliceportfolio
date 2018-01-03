@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/wick server www",
-    "production": "./node_modules/.bin/wick server www --port $PORT"
+    "deploy": "./node_modules/.bin/wick compile www _build && ./node_modules/.bin/surge _build aliceforde.me"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://candlewaster.co",
   "dependencies": {
-    "lightbox2": "^2.10.0",
+    "surge": "latest",
     "wick": "latest"
   }
 }
