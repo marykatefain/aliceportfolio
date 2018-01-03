@@ -1,6 +1,6 @@
 html {
   font-family: 'Slabo 27px', serif;
-  color: white;
+  color: #FCFCFC;
   background: black;
 }
 
@@ -15,7 +15,7 @@ header {
   margin: 0px;
   height: 90vh;
   min-height: 500px;
-  background-image: url("../images/art/painting.jpg");
+  background-image: url("../images/working.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +47,7 @@ h2 {
 }
 
 a {
-  color: white;
+  color: #FCFCFC;
 }
 
 a.button {
@@ -56,12 +56,14 @@ a.button {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   padding: 10px 20px;
-  border: 1px solid lightgrey;
+  border: 1px solid #FCFCFC;
+  background: #FCFCFC;
+  color: #1A6481;
   border-radius: 4px;
   transition: all 0.4s;
   &:hover {
-    background: lightgrey;
-    color: #4A9DA7;
+    background: #1A6481;
+    color: #FCFCFC;
   }
 }
 
@@ -94,12 +96,13 @@ nav {
   h1 {
     font-size: 10vw;
     margin: 0 auto;
-    font-family: 'Skranji', cursive;
+    font-family: 'Cinzel', serif;
     text-shadow: 2px 2px black;
 
   }
   .subheadline {
     font-size: 24px;
+    font-family: 'Cinzel', serif;
     font-weight: normal;
     text-align: center;
     margin: 0px auto;
@@ -145,23 +148,25 @@ section .centered {
 }
 
 section.light {
-  background-color: lightgray;
-  color: white;
+  background-color:  #020202;
+  color: #FCFCFC;
   a {
-    color: white;
+    color: #FCFCFC;
     &:hover {
-        color: #4A9DA7;
+        color: #1A6481;
       }
   }
 }
 
-section.orange {
-  background-color: #973E16;
-  color: white;
+section.splash {
+  background-image: url("../images/splash.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  color: #FCFCFC;
   a {
-    color: white;
+    color: #1A6481;
     &:hover {
-        color: #4A9DA7;
+        color: #FCFCFC;
       }
   }
 }
@@ -225,8 +230,19 @@ section.orange {
 }
 
 .profile .bio {
-  width: 50vw;
-  max-width: 600px;
+  width: 60vw;
+  max-width: 700px;
+  padding: 20px;
+  background-color: rgba(0,0,0, .6);
+  border-radius: 2%;
+}
+
+.profile .bio a.button {
+  color: #122196;
+  &:hover {
+    background: #122196;
+    color: #FCFCFC;
+  }
 }
 
 @media (max-width: 600px) {
@@ -260,14 +276,23 @@ section.orange {
 footer {
   width: 100%;
   bottom: 0px;
-  background-color: #000000;
+  background-color: #020202;
 }
 
 footer section.light {
   a {
-    color: #4A9DA7;
+    color: #FCFCFC;
     &:hover {
-      color: #973E16;
+      color: #122196;
+    }
+  }
+}
+
+footer section.light .links{
+  a {
+    color: #122196;
+    &:hover {
+      color: #FCFCFC;
     }
   }
 }
@@ -288,7 +313,7 @@ footer section.light {
 .footer-column {
     padding: 20px;
     max-width: 50%;
-    color: #4A9DA7;
+    color: #FCFCFC;
 
     ul {
       list-style: none;
@@ -297,9 +322,9 @@ footer section.light {
       margin-bottom: 20px;
     }
     a {
-      color: #4A9DA7;
+      color: #FCFCFC;
       &:hover {
-        color: #973E16;
+        color: #122196;
       }
     }
 }
@@ -315,18 +340,18 @@ ul.links {
   text-align: right;
   a {
     text-decoration: none;
-    color: #4A9DA7;
+    color: #FCFCFC;
     &:hover {
-      color: #973E16;
+      color: #122196;
     }
   }
 }
 
 a.footer.button {
-  border-color: #4A9DA7;
+  border-color: #122196;
   &:hover {
-    background: #4A9DA7;
-    color: lightgrey;
+    background: #122196;
+    color: #FCFCFC;
   }
 }
 
@@ -338,7 +363,7 @@ a.footer.button {
     a {
       text-decoration: none;
       &:hover {
-        color: #4A9DA7;
+        color: #122196;
       }
     }
   }
