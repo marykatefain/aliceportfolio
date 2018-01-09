@@ -205,6 +205,12 @@ section.splash {
   height: 200px;
 }
 
+@media (max-width: 600px) {
+  .art-item {
+
+  }
+}
+
 .art-item img {
   width: auto;
   height: 200px;
