@@ -150,11 +150,19 @@ section .centered .pet {
 
 @media (max-width: 600px) {
   section .centered {
-    max-width: 240px;
-    margin: 0px auto;
+    margin: 0px 30px;
     padding: 10px 0px;
+    min-width: 300px;
   }
 }
+
+@media (max-width: 600px) {
+  section .main {
+    max-width: 240px;
+    margin: 0px 60px;
+  }
+}
+
 
 section.light {
   background-color:  #020202;
@@ -246,6 +254,12 @@ section.splash {
   border-radius: 2%;
 }
 
+@media (max-width: 600px) {
+  .profile .bio {
+    width: 100%;
+  }
+}
+
 section a.button {
   color: #122196;
   &:hover {
@@ -271,6 +285,7 @@ section a.button {
 @media (max-width: 600px) {
   .buttons {
     flex-direction: column;
+    justify-content: center;
   }
   .buttons .button {
     margin: 20px;
