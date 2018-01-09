@@ -206,8 +206,8 @@ section.splash {
 }
 
 @media (max-width: 600px) {
-  .art-item {
-
+  .art-item:nth-of-type(n+4) {
+    display:none;
   }
 }
 
