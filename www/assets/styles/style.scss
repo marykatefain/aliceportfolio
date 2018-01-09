@@ -21,6 +21,11 @@ header {
   background-size: cover;
 }
 
+header.pet {
+  background-image: url("../images/silas.jpg");
+  background-position: center;
+}
+
 @media (max-width: 600px) {
   header {
     display: flex;
@@ -139,6 +144,10 @@ section .centered {
   padding: 50px 0px;
 }
 
+section .centered .pet {
+  padding: 0px 0px;
+}
+
 @media (max-width: 600px) {
   section .centered {
     max-width: 240px;
@@ -237,7 +246,7 @@ section.splash {
   border-radius: 2%;
 }
 
-.profile .bio a.button {
+section a.button {
   color: #122196;
   &:hover {
     background: #122196;
@@ -255,7 +264,7 @@ section.splash {
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 50px 0px;
 }
 
@@ -277,6 +286,7 @@ footer {
   width: 100%;
   bottom: 0px;
   background-color: #020202;
+  border-top: 5px solid #122196;
 }
 
 footer section.light {
