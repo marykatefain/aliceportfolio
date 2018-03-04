@@ -195,6 +195,10 @@ section.splash {
   margin: 50px auto;
 }
 
+.art h2 {
+  display: block;
+}
+
 .art-item {
   border-style: solid;
   border-width: 10px;
@@ -205,11 +209,11 @@ section.splash {
   height: 200px;
 }
 
-@media (max-width: 600px) {
-  .art-item:nth-of-type(n+4) {
-    display:none;
-  }
-}
+// @media (max-width: 600px) {
+//   .art-item:nth-of-type(n+4) {
+//     display:none;
+//   }
+// }
 
 .art-item img {
   width: auto;
@@ -274,6 +278,11 @@ section a.button {
   }
 }
 
+
+section a.button.hidden {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .profile .bio {
     width: 80vw;
@@ -307,7 +316,7 @@ footer {
   width: 100%;
   bottom: 0px;
   background-color: #020202;
-  border-top: 5px solid #122196;
+  border-top: 50px solid #122196;
 }
 
 footer section.light {
